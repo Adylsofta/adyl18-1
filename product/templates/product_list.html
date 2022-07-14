@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    hello
+    {% for vegetable in all_vegetables %}
+        <div>{{ vegetable.name }}</div>
+    {% endfor %}
 </body>
 </html>

@@ -3,8 +3,8 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def homepage(request):
-    html = Vegetables.objects.all()
-    context = {'all_vegetables": html}
+    products = Vegetables.objects.all()
+    context = {'all_vegetables": products}
     return render(request, "product_list.html")
 
 
